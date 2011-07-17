@@ -13,13 +13,13 @@ Magento only provides the ability to set either a HTML email or Plain Text email
 
 ## Installation ##
 
-Copy the files into their respective directories with you Magento root.
+Copy the files into their respective directories within your Magento root.
 
-As with many extensions that alter the admin you will most likely need to log-out and then log-in to see the configuration settings.
+As with many extensions that alter the admin you will need to log-out and then log-in to see the configuration settings.
 
 ## Configuration ##
 
-There is only once configuration option under System->Configuration->Multipart Email Config.  
+There is only one configuration option under System->Configuration->Multipart Alternative Email Config.  
 This can be used to override the default Boundary String `--EMAIL_BOUNDARY--` that is used to define the end of the HTML part and the beginning of the Plain Text part of the email.
 
 To use, insert the Boundary String (defaults to `--EMAIL_BOUNDARY--`) at the end of your HTML transactional email templates, then include a plain text version of the email.
