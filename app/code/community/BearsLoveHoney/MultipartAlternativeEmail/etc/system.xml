@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<multipartalternativeemailconfig translate="label" module="multipartalternativeemail">
+			<label>Multipart Alternative Email Config</label>
+			<sort_order>99999</sort_order>
+		</multipartalternativeemailconfig>
+	</tabs>
+	<sections>
+		<general>
+			<groups>
+				<example>
+					<label>Multipart Alternative Email Config Group</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+				</example>
+			</groups>
+		</general>
+		<multipartalternativeemail_options translate="label" module="multipartalternativeemail">
+			<label>Multipart Alternative Email Config Options</label>
+			<tab>multipartalternativeemailconfig</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>1000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<configfields translate="label">
+					<label>Multipart Alternative Email Config Fields</label>
+					<comment>
+						<![CDATA[
+						This text is used to separate the HTML and plain text parts of the email.
+						<br />
+						HTML should come first, followed by the Boundary String, then the plain text.
+						<br />
+						Try to use a string that is unlikely to normally occur in an email.
+						]]>
+					</comment>
+					<frontend_type>text</frontend_type>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<multipartalternativeemail_boundary>
+							<label>Boundary String</label>
+							<frontend_type>text</frontend_type>
+							<validate>required-entry</validate>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</multipartalternativeemail_boundary>
+					</fields>
+				</configfields>
+			</groups>
+		</multipartalternativeemail_options>
+	</sections>
+</config>

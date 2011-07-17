@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<BearsLoveHoney_MultipartAlternativeEmail>
+			<active>true</active>
+			<codePool>community</codePool>
+		</BearsLoveHoney_MultipartAlternativeEmail>
+	</modules>
+</config>
